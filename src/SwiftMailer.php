@@ -43,6 +43,6 @@ class SwiftMailer implements Mailer
         $type->buildEmail($builder);
         $email = $builder->build(new SwiftEmail());
 
-        $this->mailer->send($email);
+        $this->mailer->send($email->getMessage());
     }
 }
