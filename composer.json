@@ -1,7 +1,7 @@
 {
     "name": "jdr/mailer-swift-mailer-bridge",
     "type": "library",
-    "description": ":package_description",
+    "description": "Bridge for jdr/mailer that allows you to send emails using swift mailer",
     "keywords": [
         "jdr",
         "mailer-swift-mailer-bridge"

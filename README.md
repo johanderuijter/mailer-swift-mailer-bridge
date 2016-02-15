@@ -7,7 +7,7 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-The `MailerSwiftMailerBridge` allows you to send emails using swift mailer.
+The `MailerSwiftMailerBridge` allows you to send emails using swift mailer with [Mailer][link-mailer].
 
 ## Install
 
@@ -50,15 +50,15 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 [ico-version]: https://img.shields.io/packagist/v/jdr/mailer-swift-mailer-bridge.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/jdr/mailer-swift-mailer-bridge/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/jdr/mailer-swift-mailer-bridge.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/jdr/mailer-swift-mailer-bridge.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/johanderuijter/mailer-swift-mailer-bridge/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/johanderuijter/mailer-swift-mailer-bridge.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/johanderuijter/mailer-swift-mailer-bridge.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/jdr/mailer-swift-mailer-bridge.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/jdr/mailer-swift-mailer-bridge
-[link-travis]: https://travis-ci.org/jdr/mailer-swift-mailer-bridge
-[link-scrutinizer]: https://scrutinizer-ci.com/g/jdr/mailer-swift-mailer-bridge/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/jdr/mailer-swift-mailer-bridge
+[link-travis]: https://travis-ci.org/johanderuijter/mailer-swift-mailer-bridge
+[link-scrutinizer]: https://scrutinizer-ci.com/g/johanderuijter/mailer-swift-mailer-bridge/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/johanderuijter/mailer-swift-mailer-bridge
 [link-downloads]: https://packagist.org/packages/jdr/mailer-swift-mailer-bridge
 [link-author]: https://github.com/johanderuijter
 [link-contributors]: ../../contributors
