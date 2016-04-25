@@ -38,26 +38,30 @@ class SwiftEmail implements Email
     }
 
     /**
-     * Set the sender of this message.
+     * Set the From addresses.
      *
-     * @param Address $address
+     * @param Address[] $addresses
      *
      * @return self
      */
-    public function setSender(Address $address): Email
+    public function setFrom(array $addresses): Email
     {
-        $this->message->setSender($address->getEmail(), $address->getName());
+        $addresses = $this->transformAddressesToArray($addresses);
+        $this->message->setFrom($addresses);
 
         return $this;
     }
 
     /**
-     * Get the sender address for this message.
+     * Get the To addresses for this message.
      *
-     * @return Address
+     * @return Address[]
      */
-    public function getSender(): Address
+    public function getFrom(): array
     {
+        $addresses = $this->message->getFrom();
+
+        return $this->transformArrayToAddresses($addresses);
     }
 
     /**
@@ -174,6 +178,64 @@ class SwiftEmail implements Email
         $addresses = $this->message->getBcc();
 
         return $this->transformArrayToAddresses($addresses);
+    }
+
+    /**
+     * Set the sender of this message.
+     *
+     * @param Address $address
+     *
+     * @return self
+     */
+    public function setSender(Address $address): Email
+    {
+        $this->message->setSender($address->getEmail(), $address->getName());
+
+        return $this;
+    }
+
+    /**
+     * Get the sender address for this message.
+     *
+     * @return Address|null
+     */
+    public function getSender()
+    {
+        $addresses = $this->transformArrayToAddresses($this->message->getSender());
+
+        if ($address = reset($addresses)) {
+            return $address;
+        }
+
+        return null;
+    }
+
+    /**
+     * Set the bounce address for this message.
+     *
+     * @param Address $address
+     */
+    public function setBounce(Address $address): Email
+    {
+        $this->message->setReturnPath($address->getEmail(), $address->getName());
+
+        return $this;
+    }
+
+    /**
+     * Get the bounce address for this message.
+     *
+     * @return Address|null
+     */
+    public function getBounce()
+    {
+        $addresses = $this->transformArrayToAddresses($this->message->getReturnPath());
+
+        if ($address = reset($addresses)) {
+            return $address;
+        }
+
+        return null;
     }
 
     /**
