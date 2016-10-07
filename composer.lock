@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f9d7ec41ec3e896a8e39ea06f6392a87",
-    "content-hash": "553ad0c0cde250936009c740c682f391",
+    "hash": "cac25a4d175f44027ee82a36bae2f40e",
+    "content-hash": "5a1b23058c010965077e3fbdf75f65ea",
     "packages": [
         {
             "name": "jdr/mailer",
-            "version": "dev-master",
+            "version": "0.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johanderuijter/mailer.git",
-                "reference": "a12d5143c5c3a5cc3764d6f825e917d5c2e769d2"
+                "reference": "19da128a8a79d8a9b30145a3699690a72505de0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johanderuijter/mailer/zipball/a12d5143c5c3a5cc3764d6f825e917d5c2e769d2",
-                "reference": "a12d5143c5c3a5cc3764d6f825e917d5c2e769d2",
+                "url": "https://api.github.com/repos/johanderuijter/mailer/zipball/19da128a8a79d8a9b30145a3699690a72505de0c",
+                "reference": "19da128a8a79d8a9b30145a3699690a72505de0c",
                 "shasum": ""
             },
             "require": {
@@ -28,6 +28,9 @@
                 "phpunit/phpunit": "~5.0",
                 "scrutinizer/ocular": "~1.1",
                 "squizlabs/php_codesniffer": "~2.3"
+            },
+            "suggest": {
+                "jdr/mailer-swift-mailer-bridge": "Send emails using swiftmailer"
             },
             "type": "library",
             "extra": {
@@ -58,7 +61,7 @@
                 "jdr",
                 "mailer"
             ],
-            "time": "2016-08-02 21:20:42"
+            "time": "2016-10-08 10:32:40"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2340,9 +2343,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "jdr/mailer": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

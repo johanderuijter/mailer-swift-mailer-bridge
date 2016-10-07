@@ -19,7 +19,7 @@
     "require": {
         "php": "~7.0",
         "swiftmailer/swiftmailer": "~5.0",
-        "jdr/mailer": "@dev"
+        "jdr/mailer": "~0.0.1"
     },
     "require-dev": {
         "phpunit/phpunit": "~5.0",
