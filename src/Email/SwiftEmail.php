@@ -24,7 +24,7 @@ class SwiftEmail implements Email
      */
     public function __construct(Swift_Message $message = null)
     {
-        $this->message = $message ?? Swift_Message::newInstance();
+        $this->message = $message ?? new Swift_Message();
     }
 
     /**
