@@ -17,8 +17,8 @@
         }
     ],
     "require": {
-        "php": "~7.0",
-        "swiftmailer/swiftmailer": "~5.0",
+        "php": "^7.1",
+        "swiftmailer/swiftmailer": "^6.0",
         "jdr/mailer": "~0.0.1"
     },
     "require-dev": {
